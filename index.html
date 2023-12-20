@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Music Band</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 id="title">Music Band</h1>
+    <div class="music-container">
+      <div class="set">
+        <button class="w drum">w</button>
+        <button class="a drum">a</button>
+        <button class="s drum">s</button>
+        <button class="d drum">d</button>
+        <button class="j drum">j</button>
+        <button class="k drum">k</button>
+        <button class="l drum">l</button>
+      </div>
+
+      <div class="piano">
+        <div class="column keys-checkbox">
+          <span>show keys</span><input type="checkbox" checked />
+        </div>
+
+        <ul class="piano-keys">
+          <li class="key white" data-key="a"><span>a</span></li>
+          <li class="key black" data-key="w"><span>w</span></li>
+          <li class="key white" data-key="s"><span>s</span></li>
+          <li class="key black" data-key="e"><span>e</span></li>
+          <li class="key white" data-key="d"><span>d</span></li>
+          <li class="key white" data-key="f"><span>f</span></li>
+          <li class="key black" data-key="t"><span>t</span></li>
+          <li class="key white" data-key="g"><span>g</span></li>
+          <li class="key black" data-key="y"><span>y</span></li>
+
+          <li class="key white" data-key="h"><span>h</span></li>
+          <li class="key black" data-key="u"><span>u</span></li>
+          <li class="key white" data-key="j"><span>j</span></li>
+          <li class="key white" data-key="k"><span>k</span></li>
+          <li class="key black" data-key="o"><span>o</span></li>
+          <li class="key white" data-key="l"><span>l</span></li>
+          <li class="key black" data-key="p"><span>p</span></li>
+          <li class="key white" data-key=";"><span>c</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="column volume-slider">
+      <span>Volumn</span
+      ><input type="range" min="0" max="1" value="0.5" step="any" />
+    </div>
+    <br />
+    <div>
+      <button id="start" class="record">Start Recording</button>
+      <button id="stop" class="record">Stop Recording</button>
+      <button id="play" class="record">Play Recording</button>
+    </div>
+    <div id="output"></div>
+
+    <footer>Make Music with ❤️.</footer>
+
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
